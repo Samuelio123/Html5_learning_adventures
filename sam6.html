@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    		<title>Form and Inputs</title>
+	</head>
+
+	<body>
+<!--School details-->
+
+		<p>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" placeholder="Your Name">
+		</p>
+
+		<p>
+			<label for="class">Class:</label>
+			<input type="text" name="class" id="class" placeholder="Your Class">
+		</p>
+
+		<p>
+			<label for="school">School</label>
+			<input type="text" name="school" id="school" placeholder="Name of your School">
+		</p>
+
+<!--Password-->
+		<p>
+			<label for="idnumber">ID Number:</label>
+			<input type="password" id="idnumber" placeholder="Your ID Number">
+		</p>
+
+		<p>
+			<label for="password">Password:</label>
+			<input type="password" id="password" placeholder="Input your secret Password">
+		</p>
+
+<!--Checkboxes-->
+		<h3>Check in the box, For Example: <input type="checkbox" name="color" value="Yes" checked> </h3>
+
+		<p>
+			<input type="checkbox" name="gender" id="male" value="male">
+			<label for="male">Male:</label>
+		</p>
+
+		<p>
+			<input type="checkbox" name="gender" id="female" value="female">
+			<label for="female">Female:</label>
+		</p>
+
+		<p>
+			<input type="checkbox" name="gender" id="maybe" value="maybe">
+			<label for="maybe">I'd rather not disclose:</label>
+		</p>
+
+
+<!--Radio Buttons-->
+			<h1>Are you Happy?</h1>
+		<p>
+    			<label for="yes">Yes:
+        		<input type="radio" id="yes" name="reply" value="yes">
+    			</label>
+		</p>
+
+		<p>
+    			<label for="no">No:
+		        <input type="radio" id="no" name="reply" value="no">
+    			</label>
+		</p>
+
+<!--Drop down menus-->
+		<p>
+			<label for="colleges">Universities:</label>
+			<select name="colleges" id="colleges" multiple size="3">
+			<optgroup label="colleges">
+				<option value="1"> Redeemers University</option>
+				<option value="2"> Convenant Unibersity</option>
+				<option value="3" selected> University of Delta, Abgor </option>
+				<option value="4"> Ajayi Crowther University</option>
+				<option value="5"> Babcock University</option>
+			</select>
+		</p>
+
+<!--Text Areas-->
+			<h3>Write anything in the next provided line:</h3>
+				<label for="message">Your Message:</label>
+			<br>
+				<textarea name="message" id="message"></textarea>
+
+<!--Submit button-->
+		<p>
+			<button type="submit">Submit</button>
+			<button type="submit" formaction="https://httpbin.org/post" formmethod="post">SUBMIT</button>
+
+<!--Reset Button-->
+			<button type="reset">Reset</button>
+		</p>
+
+
+	</body>
+  </html>
